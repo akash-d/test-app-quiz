@@ -1,0 +1,80 @@
+<div class="quizHold" ng-if="limit>0">
+    <h2 class="pull-rght">Lets start creating question:</h2>
+    <div class="title">
+        <h2> number of questions left {{limit}}</h2>
+        <hr>
+    </div>
+    <form name="form1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Question</label>
+                    <input type="text" class="form-control" name="text1" ng-model="form1.ques" required>
+                    <div ng-messages="form1.text1.$error" ng-show="form1.text1.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Answers</label>
+                    <input type="text" class="form-control" name="text2" ng-model="form1.ans1" required>
+                    <div ng-messages="form1.text2.$error" ng-show="form1.text2.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Answers</label>
+                    <input type="text" class="form-control" name="text3" ng-model="form1.ans2" required>
+                    <div ng-messages="form1.text3.$error" ng-show="form1.text3.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Answers</label>
+                    <input type="text" class="form-control" name="text4" ng-model="form1.ans3" required>
+                    <div ng-messages="form1.text4.$error" ng-show="form1.text4.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Answers</label>
+                    <input type="text" class="form-control" name="text5" ng-model="form1.ans4" required>
+                    <div ng-messages="form1.text5.$error" ng-show="form1.text5.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Correct answer</label>
+                    <input type="text" class="form-control" name="text6" ng-model="form1.ans5" required>
+                    <div ng-messages="form1.text6.$error" ng-show="form1.text6.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Time to allot (in seconds 0-120)</label>
+                    <input type="number" class="form-control" name="text7" ng-model="form1.time1" required>
+                    <div ng-messages="form1.text7.$error" ng-show="form1.text7.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <button class="btn btn-success" ng-click="subMitQues(form1)" ng-disabled="form1.$invalid">Next</button>
+</div>
+
+<div class="quizHold" ng-if="limit<=0">
+    <h2 class="pull-rght">Woah!! All set now</h2>
+    <button class="btn btn-success" ng-click="locationRedirect()">Create one more test</button>
+</div>

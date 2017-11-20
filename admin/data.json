@@ -1,0 +1,94 @@
+{
+    "data": [{
+            "title": "What is Q1 ?",
+            "option": [{
+                    "id": 1,
+                    "value": "Synatically awesome style sheet"
+                },
+                {
+                    "id": 2,
+                    "value": "Synatically awesome style sheet"
+                },
+                {
+                    "id": 3,
+                    "value": "Simply awesome style sheet"
+                },
+                {
+                    "id": 4,
+                    "value": "Super awesome style sheet"
+                }
+            ],
+            "correct": "2",
+            "maxTime": 10
+        },
+        {
+            "title": "What is Q2",
+            "qid": 1,
+            "option": [{
+                    "id": 1,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 2,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 3,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 4,
+                    "value": "SCSS"
+                }
+            ],
+            "correct": 2,
+            "maxTime": 20
+        },
+        {
+            "title": "What is Q3",
+            "qid": 1,
+            "option": [{
+                    "id": 1,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 2,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 3,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 4,
+                    "value": "SCSS"
+                }
+            ],
+            "correct": 2,
+            "maxTime": 5
+        },
+        {
+            "title": "What is Q4",
+            "qid": 1,
+            "option": [{
+                    "id": 1,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 2,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 3,
+                    "value": "SCSS"
+                },
+                {
+                    "id": 4,
+                    "value": "SCSS"
+                }
+            ],
+            "correct": 2,
+            "maxTime": 20
+        }
+    ]
+}

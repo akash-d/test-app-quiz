@@ -1,0 +1,18 @@
+<div class="quizHold">
+    <span class="pull-rght">Question: {{currentQues}}/{{totalQues}}</span>
+    <div class="title">
+        <h2>{{title}}</h2>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-md-6" ng-repeat="data in optionArray">
+            <div class="answer">
+                <input type="radio" name="gender" id="{{data.id}}" ng-click="someSelected(data.id)">
+                <label for="{{data.id}}">{{data.value}}</label>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-success" ng-if="initial<lengthOF" ng-disabled="selectedVal==false" ng-click="stopTimer();subMitAnswer()">Next</button>
+    <button class="btn btn-success" ng-if="initial>=lengthOF" ng-disabled="selectedVal==false" ng-click="subMitAnswer();generateResult()">Finish</button>
+    <span>Time left to answer : {{timeLeft}} seconds</span>
+</div>

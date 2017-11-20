@@ -1,0 +1,33 @@
+<div class="main-holder">
+    <h1>Fill in the details !!</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form name="formValidation">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" name="username" ng-model="inputName" required>
+                    <div ng-messages="formValidation.username.$error" ng-show="formValidation.username.$touched">
+                        <p class="error" ng-message="required">Why do you have to test validation ? Enter your name please</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" ng-model="emailName" required>
+                    <div ng-messages="formValidation.email.$error" ng-show="formValidation.email.$touched">
+                        <p class="error" ng-message="required">Agghh!! Email id is required</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Job title</label>
+                    <p>{{jobTitle}}</p>
+                </div>
+                <div class="form-group">
+                    <label>Year of experience</label>
+                    <p>{{yearExp}}</p>
+                </div>
+            </form>
+            <button ng-click="changeLocation()" class="btn btn-info" ng-disabled="formValidation.$invalid">Start test</button>
+        </div>
+    </div>
+
+</div>

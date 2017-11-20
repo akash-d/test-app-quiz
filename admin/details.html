@@ -1,0 +1,38 @@
+<div class="main-holder">
+    <h1>Lets start creating a quiz</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form name="formValidation">
+                <div class="form-group">
+                    <label>Job title</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">UI developer</option>
+                        <option value="">UX designer</option>
+                        <option value="">IOS developer</option>
+                        <option value="">Android developer</option>
+                        <option value="">Back end developer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Year of experience</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">0-1</option>
+                        <option value="">1-2</option>
+                        <option value="">2-3</option>
+                        <option value="">3-4</option>
+                        <option value="">CTO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Number of question</label>
+                    <input type="number" class="form-control" name="number" ng-model="numberVal" required>
+                    <div ng-messages="formValidation.email.$error" ng-show="formValidation.email.$touched">
+                        <p class="error" ng-message="required">This is a required field</p>
+                    </div>
+                </div>
+            </form>
+            <button ng-click="changeLocation()" class="btn btn-info" ng-disabled="formValidation.$invalid">Start test</button>
+        </div>
+    </div>
+
+</div>
